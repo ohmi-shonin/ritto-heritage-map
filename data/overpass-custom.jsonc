@@ -2,8 +2,8 @@
     "osm": {
         "historic_area": {
             "overpass": [
-                "way[\"amenity\"]",
-                "nwr[\"historic\"]"
+                "area[\"name\"=\"栗東市\"][\"admin_level\"=\"7\"]->.ritto; way[\"amenity\"](area.ritto)",
+                "nwr[\"historic\"](area.ritto)"
             ],
             "tags": [
                 "amenity=place_of_worship",
@@ -27,9 +27,9 @@
         },
         "historic_poi": {
             "overpass": [
-                "nwr[\"amenity\"]",
-                "nwr[\"historic\"]",
-                "nwr[\"tourism\"]"
+                "area[\"name\"=\"栗東市\"][\"admin_level\"=\"7\"]->.ritto; nwr[\"amenity\"](area.ritto)",
+                "nwr[\"historic\"](area.ritto)",
+                "nwr[\"tourism\"](area.ritto)"
             ],
             "tags": [
                 "amenity=library",
