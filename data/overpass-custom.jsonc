@@ -1,0 +1,68 @@
+{
+    "osm": {
+        "historic_area": {
+            "overpass": [
+                "way[\"amenity\"]",
+                "nwr[\"historic\"]"
+            ],
+            "tags": [
+                "amenity=place_of_worship",
+                "historic=archaeological_site",
+                "historic=battlefield",
+                "historic=manor",
+                "historic=fort"
+            ],
+            "expression": {
+                "poiView": true, // true時はアイコン表示
+                "stroke": "#606060",
+                "stroke-width": 0
+            },
+            "titles": [
+                "name",
+                "operator"
+            ]
+        },
+        "historic_poi": {
+            "overpass": [
+                "nwr[\"amenity\"]",
+                "nwr[\"historic\"]",
+                "nwr[\"tourism\"]"
+            ],
+            "tags": [
+                "amenity=library",
+                "tourism=artwork",
+                "tourism=museum",
+                "tourism=information",
+                "historic=aircraft",
+                "historic=building",
+                "historic=cannon",
+                "historic=castle",
+                "historic=highwater_mark",
+                "historic=locomotive",
+                "historic=memorial",
+                "historic=mine_shaft",
+                "historic=milestone",
+                "historic=monument",
+                "historic=rune_stone",
+                "historic=ship",
+                "historic=stone",
+                "historic=tank",
+                "historic=tomb",
+                "historic=tower",
+                "historic=vehicle",
+                "historic=wayside_cross",
+                "historic=wayside_shrine",
+                "historic=wreck"
+            ],
+            "expression": {
+                "poiView": true, // true時はアイコン表示
+                "stroke": "#606060",
+                "stroke-width": 0
+            },
+            "titles": [
+                "name",
+                "operator"
+            ]
+        }
+    }
+}
