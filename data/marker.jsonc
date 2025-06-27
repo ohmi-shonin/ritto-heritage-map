@@ -54,6 +54,7 @@
                 "photo_booth": "photo.svg",
                 "prep_school": "school.svg",
                 "place_of_worship": "place-of-worship.svg",
+                "monastery": "place-of-worship.svg",
                 "police": "police.svg",
                 "post_box": "post_box.svg",
                 "post_office": "post-JP.svg",
@@ -328,7 +329,7 @@
             },
             "landuse": {
                 "farmland": "farm.svg",
-                "religious": "marker-stroked.svg",
+                "religious": "place-of-worship.svg",
                 "industrial": "industry.svg",
                 "forest": "park-alt1.svg",
                 "orchard": "park.svg",
