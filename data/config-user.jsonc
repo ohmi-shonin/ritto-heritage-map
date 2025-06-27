@@ -41,7 +41,7 @@
         "poiFilter": "filter", // listTable更新時 all:全て / filter:絞り込み / "":非連動
         "editZoom": {
             // 編集時に追加するpoiZoom
-            "historic_area": 15,
+            "historic_area": 14,
             "historic_poi": 14
         }
     },
