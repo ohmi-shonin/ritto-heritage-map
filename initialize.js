@@ -97,11 +97,13 @@ window.addEventListener("DOMContentLoaded", function () {
             const init_close = function () {
                 if (Conf.selectItem.menu == "") {
                     listTable.makeSelectList(Conf.listTable.category); // Must be executed before eventMoveMap
+                    listTable.makePeriodList(); // Initialize period selector
                 } else {
                     // Make SelectItem(Manual)
                     Object.keys(Conf.selectItem.menu).forEach((key) => {
                         winCont.select_add("list_category", key, Conf.selectItem.menu[key]);
                     });
+                    listTable.makePeriodList(); // Initialize period selector for manual mode too
                 }
                 let eventMoveMap = cMapMaker.eventMoveMap.bind(cMapMaker);
                 eventMoveMap().then(() => {

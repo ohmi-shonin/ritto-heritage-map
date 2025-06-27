@@ -17,6 +17,7 @@ class CMapMaker {
 		mapLibre.on('zoomend', this.eventZoomMap.bind(cMapMaker))			// ズーム終了時に表示更新
 		list_keyword.addEventListener('change', this.eventChangeKeyword.bind(cMapMaker))	// 
 		list_category.addEventListener('change', this.eventChangeCategory.bind(cMapMaker))	// category change
+		list_period.addEventListener('change', this.eventChangePeriod.bind(cMapMaker))	// period change
 		this.eventMoveMap();
 		this.eventZoomMap();
 	}
@@ -393,4 +394,16 @@ class CMapMaker {
 			history.replaceState('', '', location.pathname + catname + location.hash)
 		}
 	};
+
+	// EVENT: 時代変更時のイベント
+	eventChangePeriod() {
+		let selperiod = listTable.getSelPeriod()
+		listTable.filterPeriod(selperiod)
+		if (Conf.view.poiFilter == "filter") { 
+			this.viewPoi(poiCont.getTargets()) 
+		}
+		let periodname = selperiod !== "-" ? `&period=${selperiod}` : ""
+		let currentUrl = location.pathname + location.search.replace(/[&?]period=[^&]*/, '') + periodname + location.hash
+		history.replaceState('', '', currentUrl)
+	}
 };

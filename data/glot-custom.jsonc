@@ -91,4 +91,13 @@
         "ja": "写真URL5",
         "en": "Picture URL3"
     }
+    ,
+    "period_select": {
+        "ja": "時代",
+        "en": "Period"
+    },
+    "all_periods": {
+        "ja": "全時代",
+        "en": "All Periods"
+    }
 }

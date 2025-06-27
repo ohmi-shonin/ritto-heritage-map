@@ -148,4 +148,32 @@
             }
         ]
     }
+    ,
+    "historicalPeriods": {
+        "periods": [
+            {"key": "kofun", "name": "古墳時代", "range": "3-7世紀"},
+            {"key": "asuka", "name": "飛鳥時代", "range": "592-710"},
+            {"key": "nara", "name": "奈良時代", "range": "710-794"},
+            {"key": "heian", "name": "平安時代", "range": "794-1185"},
+            {"key": "kamakura", "name": "鎌倉時代", "range": "1185-1333"},
+            {"key": "muromachi", "name": "室町時代", "range": "1336-1573"},
+            {"key": "azuchi", "name": "安土桃山時代", "range": "1573-1603"},
+            {"key": "edo", "name": "江戸時代", "range": "1603-1868"},
+            {"key": "meiji", "name": "明治時代", "range": "1868-1912"},
+            {"key": "taisho", "name": "大正時代", "range": "1912-1926"},
+            {"key": "showa", "name": "昭和時代", "range": "1926-1989"},
+            {"key": "heisei", "name": "平成時代", "range": "1989-2019"},
+            {"key": "reiwa", "name": "令和時代", "range": "2019-"}
+        ],
+        "siteMapping": {
+            "archaeological_site": ["kofun", "asuka", "nara"],
+            "place_of_worship": ["nara", "heian", "kamakura", "muromachi", "edo"],
+            "shrine": ["nara", "heian", "kamakura", "muromachi", "edo"],
+            "temple": ["nara", "heian", "kamakura", "muromachi", "edo"],
+            "church": ["meiji", "taisho", "showa", "heisei", "reiwa"],
+            "monument": ["edo", "meiji", "taisho", "showa"],
+            "memorial": ["meiji", "taisho", "showa", "heisei"],
+            "heritage": ["kofun", "asuka", "nara", "heian", "kamakura", "muromachi", "edo", "meiji"]
+        }
+    }
 }
