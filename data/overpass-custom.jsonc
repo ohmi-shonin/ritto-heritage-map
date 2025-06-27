@@ -7,6 +7,9 @@
             ],
             "tags": [
                 "amenity=place_of_worship",
+                "building=temple",
+                "man_made=torii",
+                "man_made=lamp",
                 "historic=archaeological_site",
                 "historic=battlefield",
                 "historic=manor",
@@ -33,6 +36,7 @@
                 "tourism=artwork",
                 "tourism=museum",
                 "tourism=information",
+                "tourism=attraction",
                 "historic=aircraft",
                 "historic=building",
                 "historic=cannon",

@@ -35,14 +35,14 @@
     "view": {
         "poiZoom": {
             // アイコンの前後位置は後ろの方が手前になる
-            "historic_area": 13,
-            "historic_poi": 15
+            "historic_area": 12,
+            "historic_poi": 14
         },
         "poiFilter": "filter", // listTable更新時 all:全て / filter:絞り込み / "":非連動
         "editZoom": {
             // 編集時に追加するpoiZoom
             "historic_area": 15,
-            "historic_poi": 15
+            "historic_poi": 14
         }
     },
     "etc": {

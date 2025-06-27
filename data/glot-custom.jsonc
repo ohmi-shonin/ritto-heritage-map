@@ -1,19 +1,19 @@
 {
     "site_title": {
-        "ja": "みんなの歴史文化マップ",
-        "en": "Everyone's History & Culture Map"
+        "ja": "栗東市歴史遺産マップ",
+        "en": "Ritto City Heritage Map"
     },
     "site_subtitle": {
         "ja": "by OpenStreetMap",
         "en": "by OpenStreetMap"
     },
     "about": {
-        "ja": "みんなの歴史文化マップ",
-        "en": "Everyone's History & Culture Map"
+        "ja": "栗東市歴史遺産マップ",
+        "en": "Ritto City Heritage Map"
     },
     "about_message": {
-        "ja": "歴史文化に関する情報を地図に表示するWebアプリです。データはOpenStreetMapを利用しています。",
-        "en": "It is a web application that displays information about history and culture on a map, utilizing data from OpenStreetMap."
+        "ja": "滋賀県栗東市の歴史遺産・文化財を地図に表示するWebアプリです。データはOpenStreetMapを利用しています。",
+        "en": "A web application that displays historical heritage and cultural properties of Ritto City, Shiga Prefecture on a map, utilizing data from OpenStreetMap."
     },
     "owner": {
         "ja": "",
@@ -21,15 +21,15 @@
     },
     "licence_title": {
         "ja": "利用しているデータについて",
-        "en": "about Everyone's History & Culture Map"
+        "en": "about Ritto City Heritage Map"
     },
     "licence_message": {
         "ja": "このサイトで使われているデータは、OpenStreetMapとプロジェクトのデータを組み合わせています。</a>",
         "en": "We are all collecting information about parks with playground equipment and making maps.<br>The data used is a combination of OpenStreetMap and playground equipment for everyone project.</a>"
     },
     "develop_site": {
-        "ja": "みんなの歴史文化マップの開発サイトへ",
-        "en": "Everyone's History & Culture Map development site"
+        "ja": "栗東市歴史遺産マップの開発サイトへ",
+        "en": "Ritto City Heritage Map development site"
     },
     "more_message": {
         "ja": "",
