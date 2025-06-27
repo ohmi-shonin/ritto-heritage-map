@@ -1,7 +1,7 @@
-// Community Mapmaker User Config
 {
+    "title": "Community Mapmaker",
     "map": {
-        "tileName": "OSMFJ", // タイル一覧は config-system.jsonc へ
+        "tileName": "OSMFJ",
         "viewCenter": [
             136.022,
             35.025
@@ -30,88 +30,54 @@
         ],
         "initZoom": 12,
         "maxZoom": 23,
-        "modalZoom": 19 // モーダルダイアログ表示時のズームサイズ   
+        "modalZoom": 19
     },
     "view": {
         "poiZoom": {
-            // アイコンの前後位置は後ろの方が手前になる
             "historic_area": 12,
             "historic_poi": 14
         },
-        "poiFilter": "filter", // listTable更新時 all:全て / filter:絞り込み / "":非連動
+        "poiFilter": "filter",
         "editZoom": {
-            // 編集時に追加するpoiZoom
             "historic_area": 14,
             "historic_poi": 14
         }
     },
     "etc": {
-        "editMode": false, // 編集メニューの表示/非表示
-        "slideThumbWidth": "240",
-        "modalThumbWidth": "800",
-        "splashUrl": "./image/ogimage.png",
-        "loadingUrl": "./image/loading.gif"
-    },
-    "selectItem": { // 選択リストの内容を手動記載 / 空の時は "" とする
-        "menu": "",
-        /*{
-        "2010年時点の地図(日本)": "Japan2010",
-        "2012年時点の地図(日本)": "Japan2012",
-        "2014年時点の地図(日本)": "Japan2014",
-        "2016年時点の地図(日本)": "Japan2016",
-        "2018年時点の地図(日本)": "Japan2018",
-        "2020年時点の地図(日本)": "Japan2020",
-        "2022年時点の地図(日本)": "Japan2022",
-        "最新地図(全世界)": "OSMFJ"
-    },*/
-        "action": "" // ChangeMap:背景地図切り替え
-    },
-    "listTable": {
-        "category": "tags", // カテゴリ選択 / activity:アクティビティリスト / tags:タグ
-        "target": "tags", // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
-        "allActs": true, // true: 全てのactivityを常に表示 / false: 画面内のActivityのみ表示
-        "playback": {
-            "view": false,
-            "zoomLevel": 15,
-            "timer": 4000
+        "editMode": false,
+        "playback": false,
+        "wikipedia": {
+            "image": true
         },
-        "download": false
-    },
-    "PoiView": {
-        "targets": [
-            "historic_area",
-            "historic_poi"
-        ],
-        "update_mode": "all" // listTable更新時 all:全て / filter:絞り込み / "":非連動
-    },
-    "google": {
-        "Analytics": "",
-        "AppScript": "",
-        "targetName": "activity"
-    },
-    "static": {
-        "mode": false,
-        "osmjson": ""
-    },
-    "wikipedia": {
-        "marker": "wikipedia.svg",
-        "api_": "wikipedia.org/w/api.php?format=json&action=query&prop=extracts%7Cimages&exintro=&explaintext=&titles=",
-        "api": "wikipedia.org/api/rest_v1/page/summary/",
-        "domain": "wikipedia.org",
-        "tag": "wikipedia",
-        "image": true
+        "gsheet": {
+            "use": false,
+            "id": "",
+            "name": "",
+            "cache": 0
+        }
     },
     "menu": {
         "main": [
-            // トップメニュー一覧
             {
-                "glot-model": "about",
-                "linkto": "javascript:cMapMaker.about()",
+                "glot-model": "activities",
+                "linkto": "baselist.html",
                 "divider": false
             },
             {
+                "glot-model": "libc",
+                "linkto": "chronology.html",
+                "divider": false
+            },
+            {
+                "glot-model": "about",
+                "linkto": "#",
+                "onclick": "winCont.modal_open('about');",
+                "divider": true
+            },
+            {
                 "glot-model": "licence_title",
-                "linkto": "javascript:cMapMaker.licence()",
+                "linkto": "#",
+                "onclick": "winCont.modal_open('licence');",
                 "divider": false
             },
             {
@@ -120,35 +86,27 @@
                 "divider": false
             },
             {
-                "glot-model": "openstreetmap",
-                "linkto": "https://www.openstreetmap.org/about",
+                "glot-model": "lang_change",
+                "linkto": "#",
+                "onclick": "glot.modify();",
                 "divider": false
             }
         ],
-        // 詳細表示のハンバーガーメニュー
-        "modal": [
-            {
-                "glot-model": "osm_open",
-                "linkto": "javascript:winCont.osm_open(cMapMaker.open_osmid)",
-                "divider": false
-            },
-            {
-                "glot-model": "button_close",
-                "linkto": "javascript:winCont.modal_close()",
-                "divider": false
-            }
-        ],
-        // 詳細モーダルの追加ボタン 
         "buttons": [
             {
                 "btn_class": "btn btn-light border-secondary",
                 "code": "javascript:cMapMaker.shareURL()",
                 "icon_class": "fas fa-clone",
                 "btn_glot_name": "share_link"
+            },
+            {
+                "btn_class": "btn btn-light border-secondary",
+                "code": "javascript:alert('情報追加機能は準備中です。詳細はお問い合わせください。')",
+                "icon_class": "fas fa-plus",
+                "btn_glot_name": "add_activity"
             }
         ]
-    }
-    ,
+    },
     "historicalPeriods": {
         "periods": [
             {"key": "kofun", "name": "古墳時代", "range": "3-7世紀"},
