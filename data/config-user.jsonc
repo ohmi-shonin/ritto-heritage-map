@@ -127,21 +127,6 @@
                 "linkto": "javascript:winCont.modal_close()",
                 "divider": false
             }
-        ],
-        // 詳細モーダルの追加ボタン 
-        "buttons": [
-            {
-                "btn_class": "btn btn-light border-secondary",
-                "code": "javascript:cMapMaker.shareURL()",
-                "icon_class": "fas fa-clone",
-                "btn_glot_name": "share_link"
-            },
-            {
-                "btn_class": "btn btn-light border-secondary",
-                "code": "javascript:alert('情報追加機能は準備中です。詳細はお問い合わせください。')",
-                "icon_class": "fas fa-plus",
-                "btn_glot_name": "add_activity"
-            }
         ]
     },
     "historicalPeriods": {
